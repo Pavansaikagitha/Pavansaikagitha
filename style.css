@@ -1,0 +1,346 @@
+ /* @import url(https://fonts.googleapis.com/css?family=Merriweather:400,900italic,900,700italic,700,400italic); */
+
+
+ @import url(https://fonts.googleapis.com/css2?family=Sacramento&display=swap);
+
+ * {
+     box-sizing: border-box;
+ }
+
+ .container section {
+     background: url(./assets/clouds.png) repeat-x top center;
+     background-size: contain;
+     background-repeat: repeat;
+     background-color: #41b0bf;
+     padding-bottom: 70px;
+     position: relative;
+     border-right: 5px solid #fff;
+     border-left: 5px solid #fff;
+     border-top: 5px solid #fff;
+     padding-top: 80px;
+     text-align: center;
+ }
+
+ /* .divider {
+    padding:0;
+    margin:0;
+    
+} */
+ /* .divider h1 {
+    margin: 10%;
+    text-align:center;
+    font-size:48px;
+    color: #fff;
+}  */
+ .hero_role {
+     font-size: 40px;
+     color: #f2f2f2;
+     margin-top: 0;
+
+ }
+
+ span.Hero_name {
+     font-family: 'Sacramento', cursive !important;
+     color: #fff;
+     font-size: 80px;
+     text-transform: none;
+     font-weight: 400;
+ }
+
+ body {
+
+     /* font-family: 'Merriweather', serif; */
+     /* font-family: 'ProximaNova'; */
+     color: #3a3a3a;
+     font-family: 'Ranade', sans-serif;
+
+ }
+
+ /* p{
+  color: #fff;
+  line-height: 1.5;
+  font-size: 20px;
+} */
+ @media only screen and (max-width: 64em) {
+     .divider .Hero_name {
+         /* font-size: 63px; */
+         margin-top: 0;
+         font-size: 35px;
+     }
+
+     #footer_temp {
+         width: 100%;
+     }
+
+     .hero_role {
+         font-size: 20px;
+     }
+
+     .divider img {
+         display: none;
+     }
+
+     .container section {
+         /* padding-top: 0px;
+        padding-bottom: 30px; */
+         background: #41b0bf;
+         border: 0;
+     }
+
+     .column_1 {
+         width: 33.33333%;
+     }
+
+     .row {
+         text-align: center;
+     }
+
+     .column>p {
+         width: 100%;
+         margin-left: 35px;
+     }
+
+     .column {
+         margin-top: 30px;
+     }
+
+     .container_skill {
+         flex-direction: row;
+     }
+
+     .section_1>img {
+         width: 120px;
+     }
+ }
+
+
+
+ .row {
+     /* text-align: center; */
+     margin: 0%;
+     align-items: center;
+ }
+
+ .column {
+     float: left;
+     width: 50%;
+     padding: 10px;
+     height: 300px;
+     /* Should be removed. Only for demonstration */
+
+ }
+
+ .column_1 {
+     float: left;
+     width: 50%;
+     padding: 10px;
+     height: 300px;
+ }
+
+ .column>h1 {
+     font-size: 40px;
+     color: #838383;
+ }
+
+ .column>p {
+     font-size: 21px;
+     color: #838383;
+
+ }
+
+ /* Clear floats after the columns */
+ .row:after {
+     content: "";
+     display: table;
+     clear: both;
+ }
+
+ .column_1 img {
+     border-radius: 50%;
+     height: 270px;
+     margin: auto;
+     display: block;
+ }
+
+ /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+ @media screen and (max-width: 600px) {
+
+     .column,
+     .column_1 {
+         width: 100%;
+     }
+
+
+ }
+
+ /*social linlks fa fa*/
+ .social_links ul {
+     display: flex;
+     justify-content: center;
+ }
+
+ li {
+     text-decoration: none;
+     list-style: none;
+     padding: 10px;
+ }
+
+ li>a {
+     text-decoration: none;
+     color: #41b0bf;
+     font-size: 30px;
+ }
+
+ .social_links {
+     margin-right: 42px;
+ }
+
+ /* abou section text >p */
+ .column>p {
+     width: 80%;
+ }
+
+ /* Skill section */
+ .container_skill {
+     display: flex;
+     margin: 70px;
+     margin-top: 20px;
+ }
+
+ .section_1 {
+     flex: 1;
+     /*grow*/
+     text-align: center;
+
+ }
+
+ @media (max-width: 768px) {
+
+     /*breakpoint*/
+     .container_skill {
+         flex-direction: column;
+     }
+ }
+
+ /* projects Section */
+ .Projects {
+     display: flex;
+     flex-wrap: wrap;
+     margin-left: 20px;
+     margin-right: 20px;
+
+ }
+
+ /* Create four equal columns */
+ .Projects_items {
+     flex: 25%;
+     padding: 20px;
+ }
+
+ /* On screens that are 992px wide or less, go from four columns to two columns */
+ @media screen and (max-width: 992px) {
+     .Projects_items {
+         flex: 50%;
+     }
+
+ }
+
+ /* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+ @media screen and (max-width: 600px) {
+     .Projects {
+         flex-direction: column;
+
+     }
+ }
+
+ .Projects_items {
+     text-align: center;
+ }
+
+ #myntra {
+     width: 300px;
+     height: 201px;
+     object-fit: cover;
+     border-radius: 5px;
+     box-shadow: 0px 0px 79px -6px;
+ }
+
+ #upstox {
+     width: 300px;
+     height: 201px;
+     object-fit: cover;
+     border-radius: 5px;
+     box-shadow: 0px 0px 79px -6px;
+ }
+
+ #youtube {
+     width: 300px;
+     height: 201px;
+     object-fit: cover;
+     border-radius: 5px;
+     box-shadow: 0px 0px 79px -6px;
+ }
+
+ #aws {
+     width: 300px;
+     height: 201px;
+     object-fit: cover;
+     border-radius: 5px;
+     box-shadow: 0px 0px 79px -6px;
+ }
+
+ .Preview_links {
+     text-decoration: none;
+     color: #41b0bf;
+     font-size: 17px;
+     font-weight: bolder;
+ }
+
+ .fa-eye {
+     color: #41b0bf;
+     font-size: 20px;
+     cursor: pointer;
+ }
+
+ .Preview_links:hover,
+ .fa-eye:hover {
+     color: aqua;
+
+ }
+
+ /* download option */
+ .fa-download {
+     font-size: 30px;
+     color: #41b0bf;
+     padding: 25px;
+     border-radius: 50%;
+     background-color: #3a3a3a;
+ }
+
+ /* footer Names */
+ .footer_Name {
+     font-family: 'Sacramento', cursive !important;
+     color: #41b0bf;
+ }
+
+ .fa-heart {
+     color: red;
+ }
+
+ .footer_imgs {
+     vertical-align: middle;
+     height: auto;
+     text-align: center;
+     margin-top: -30px;
+
+
+ }
+
+ /* #footer_temp{
+    vertical-align: middle;
+   text-align: center;
+    object-fit: contain;
+   
+    
+}
+  */
